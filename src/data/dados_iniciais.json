@@ -74,28 +74,28 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Musicas",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
+        "text": "Musicas que eu escuto no dia-dia",
         "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Japa - DEJAVU",
+          "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Travis Scott - HIGHEST IN THE ROOM ",
+          "url": "https://www.youtube.com/watch?v=tfSS1e3kYeo"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Kanye West - Follow God",
+          "url": "https://www.youtube.com/watch?v=ivCY3Ec4iaU"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "DaBaby - Rockstar feat. Roddy Ricch ",
+          "url": "https://www.youtube.com/watch?v=mxFstYSbBmc"
         }
       ]
     },
@@ -108,16 +108,16 @@
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Parasita",
+          "url": "https://www.youtube.com/watch?v=xWEf44OcU1w"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Corra!",
+          "url": "https://www.youtube.com/watch?v=mDGV5UucTu8&t=27s"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Nós",
+          "url": "https://www.youtube.com/watch?v=ozBlLM3F2oI"
         }
       ]
     },
