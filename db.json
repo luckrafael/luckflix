@@ -1,17 +1,48 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Front-End",
-            "descricao": "Uma categoria",
-            "cor": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "nome": "Back-End",
-            "descricao": "Outra categoria",
-            "cor": "#cbd1ff"
-        }
-       
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Front End",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Back End",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "nome": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "nome": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw",
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw",
+      "categoriaId": 1,
+      "id": 4
+    }
+  ]
 }
