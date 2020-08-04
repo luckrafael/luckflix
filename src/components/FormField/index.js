@@ -68,7 +68,7 @@ function FormField({
   label, type, name, value, onChange, suggestions,
 }) {
   // eslint-disable-next-line linebreak-style
-  const fieldId = 'id_${name}';
+  const fieldId = `id_${name}`;
   // a tag vai ser textarea ou input
   // (if ternario)
   const isTextarea = type === 'textarea';

@@ -2,47 +2,160 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "titulo": "Estudos",
+      "cor": "#2869C5"
     },
     {
-      "id": 2,
-      "nome": "Back End",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      }
+      "titulo": "Filmes",
+      "descricao": "",
+      "cor": "#2869C5",
+      "id": 2
+    },
+    {
+      "titulo": "Games",
+      "descricao": "",
+      "cor": "#2869C5",
+      "id": 3
+    },
+    {
+      "titulo": "Músicas",
+      "descricao": "",
+      "cor": "#2869C5",
+      "id": 4
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "nome": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "A Progamação e a vida.",
+      "url": "https://www.youtube.com/watch?v=ze0qDsJGOBM"
     },
     {
-      "id": 2,
+      "titulo": "Programar Mais Rápido e Ser Mais Produtivo no Visual Studio Code (VSCode)",
+      "url": "https://www.youtube.com/watch?v=FCC2GbStmfc",
       "categoriaId": 1,
-      "nome": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "id": 19
     },
     {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw",
+      "titulo": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
       "categoriaId": 1,
-      "id": 3
+      "id": 20
     },
     {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw",
+      "titulo": "Criando um Carousel do Zero só com CSS",
+      "url": "https://www.youtube.com/watch?v=SGwHpzgqzgk",
       "categoriaId": 1,
+      "id": 21
+    },
+    {
+      "titulo": "Como melhorar a produtividade",
+      "url": "https://www.youtube.com/watch?v=3giwiZUceRA",
+      "categoriaId": 1,
+      "id": 22
+    },
+    {
+      "titulo": "Como o YouTube entrega este vídeo para você ",
+      "url": "https://www.youtube.com/watch?v=p-aAqXW63Mg",
+      "categoriaId": 1,
+      "id": 23
+    },
+    {
+      "titulo": "INTERSTELLAR - Trailer",
+      "url": "https://www.youtube.com/watch?v=OWE-4gw18_E",
+      "categoriaId": 2,
       "id": 4
+    },
+    {
+      "titulo": "Corra! - Trailer",
+      "url": "https://www.youtube.com/watch?v=mDGV5UucTu8&t",
+      "categoriaId": 2,
+      "id": 5
+    },
+    {
+      "titulo": "Nós | Trailer",
+      "url": "https://www.youtube.com/watch?v=ozBlLM3F2oI",
+      "categoriaId": 2,
+      "id": 6
+    },
+    {
+      "titulo": "Parasita - Trailer",
+      "url": "https://www.youtube.com/watch?v=xWEf44OcU1w",
+      "categoriaId": 2,
+      "id": 7
+    },
+    {
+      "titulo": "A origem - Trailer",
+      "url": "https://www.youtube.com/watch?v=HiixbtN-O24",
+      "categoriaId": 2,
+      "id": 8
+    },
+    {
+      "titulo": "The Last of Us Part II - Official Story Trailer",
+      "url": "https://www.youtube.com/watch?v=vhII1qlcZ4E",
+      "categoriaId": 3,
+      "id": 9
+    },
+    {
+      "titulo": "Cyberpunk 2077 — Official E3 2019 Cinematic Trailer",
+      "url": "https://www.youtube.com/watch?v=qIcTM8WXFjk",
+      "categoriaId": 3,
+      "id": 10
+    },
+    {
+      "titulo": "Far Cry 6 - Official Reveal Trailer",
+      "url": "https://www.youtube.com/watch?v=-IJuKT1mHO8",
+      "categoriaId": 3,
+      "id": 11
+    },
+    {
+      "titulo": "Assassin's Creed Valhalla - Official Trailer",
+      "url": "https://www.youtube.com/watch?v=ssrNcwxALS4",
+      "categoriaId": 3,
+      "id": 12
+    },
+    {
+      "titulo": "Ghost of Tsushima - Official Story Trailer",
+      "url": "https://www.youtube.com/watch?v=b_iU_gnn28U",
+      "categoriaId": 3,
+      "id": 13
+    },
+    {
+      "titulo": "Travis Scott - HIGHEST IN THE ROOM",
+      "url": "https://www.youtube.com/watch?v=tfSS1e3kYeo",
+      "categoriaId": 4,
+      "id": 14
+    },
+    {
+      "titulo": "JAPA - DEJAVU",
+      "url": "https://www.youtube.com/watch?v=jX-ooBxY9Mw",
+      "categoriaId": 4,
+      "id": 15
+    },
+    {
+      "titulo": "Kanye West - Closed On Sunday",
+      "url": "https://www.youtube.com/watch?v=MKM90u7pf3U",
+      "categoriaId": 4,
+      "id": 16
+    },
+    {
+      "titulo": "Mac Miller - Surf",
+      "url": "https://www.youtube.com/watch?v=blYo4WheVgA",
+      "categoriaId": 4,
+      "id": 17
+    },
+    {
+      "titulo": "Baco Exu do Blues - Bluesman (Official Film)",
+      "url": "https://www.youtube.com/watch?v=-xFz8zZo-Dw",
+      "categoriaId": 4,
+      "id": 18
+    },
+    {
+      "titulo": "Kendrick Lamar - HUMBLE",
+      "url": "https://www.youtube.com/watch?v=tvTRZJ-4EyI",
+      "categoriaId": 4,
+      "id": 24
     }
   ]
 }

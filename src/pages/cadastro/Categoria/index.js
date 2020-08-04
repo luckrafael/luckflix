@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForms';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
+  const history = useHistory();
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
@@ -17,7 +19,6 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    console.log('teste');
     const URL_TOP = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
       : 'https://luckflix.herokuapp.com/categorias';
@@ -28,49 +29,36 @@ function CadastroCategoria() {
           ...resposta,
         ]);
       });
-
-    //     setTimeout(() => {
-    //         setCategorias([
-    //             ...categorias,
-    //             {
-    //                 "id": 1,
-    //                 "nome": "Front-End",
-    //                 "descricao": "Uma categoria",
-    //                 "cor": "#cbd1ff"
-    //             },
-    //             {
-    //                 "id": 2,
-    //                 "nome": "Back-End",
-    //                 "descricao": "Outra categoria",
-    //                 "cor": "#cbd1ff"
-    //             },
-    //         ]);
-    //     }, 4 * 1000);
   }, []);
 
   return (
     <PageDefault>
       <h1>
         Cadastro Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        categoriasRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+          cor: values.cor,
 
-        clearForm(valoresIniciais);
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso');
+            history.push('/');
+          });
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome da Categoria "
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 

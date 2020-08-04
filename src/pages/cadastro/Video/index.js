@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../hooks/useForms';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
+  const [categorias, setCategorias] = useState([]);
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
-    titulo: 'Video padrão',
-    url: 'https://www.youtube.com/watch?v=jX-ooBxY9Mw',
-    categoria: 'Front-End',
+    titulo: '',
+    url: '',
+    categoria: '',
   });
+
+  useEffect(() => {
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
+  }, []);
+
+  console.log(categorias);
 
   return (
     <PageDefault>
@@ -21,16 +34,20 @@ function CadastroVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
 
+        const categoriaEscolhida = categorias.find((categoria) => {
+          return categoria.titulo === values.categoria;
+        });
+
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');
-            history.push('/')
+            history.push('/');
           });
-        
+
         history.push('/');
       }}
       >
@@ -50,19 +67,20 @@ function CadastroVideo() {
 
         <FormField
           label="Categoria "
-          name="url"
+          name="categoria"
           value={values.categoria}
           onChange={handleChange}
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
           Cadastrar
         </Button>
       </form>
-
-      <Link to="/cadastro/categoria">
+      <p><p></p></p>
+      <Button as={Link} className="ButtonLink" to="/cadastro/categoria">
         Cadastrar Categoria
-      </Link>
+      </Button>
     </PageDefault>
   );
 }
