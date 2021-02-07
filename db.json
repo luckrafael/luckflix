@@ -62,6 +62,12 @@
       "id": 23
     },
     {
+      "titulo": "#ScriptWD​: Série UI Design | COMO criar websites bonitos? ",
+      "url": "https://www.youtube.com/watch?v=S7PYpYtwV_g",
+      "categoriaId": 1,
+      "id": 25
+    },
+    {
       "titulo": "INTERSTELLAR - Trailer",
       "url": "https://www.youtube.com/watch?v=OWE-4gw18_E",
       "categoriaId": 2,
@@ -92,6 +98,12 @@
       "id": 8
     },
     {
+      "titulo": "GODZILLA VS KONG Trailer",
+      "url": "https://www.youtube.com/watch?v=tMHwdVOFkUw",
+      "categoriaId": 2,
+      "id": 30
+    },
+    {
       "titulo": "The Last of Us Part II - Official Story Trailer",
       "url": "https://www.youtube.com/watch?v=vhII1qlcZ4E",
       "categoriaId": 3,
@@ -120,6 +132,12 @@
       "url": "https://www.youtube.com/watch?v=b_iU_gnn28U",
       "categoriaId": 3,
       "id": 13
+    },
+    {
+      "titulo": "Hogwarts Legacy - Official Reveal Trailer | PS5",
+      "url": "https://youtu.be/1O6Qstncpnc",
+      "categoriaId": 3,
+      "id": 29
     },
     {
       "titulo": "Travis Scott - HIGHEST IN THE ROOM",
